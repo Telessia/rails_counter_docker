@@ -1,12 +1,14 @@
 class CounterController < ApplicationController
   def index
+    unless Count.find_by(_id: "counterZero").nil?
     @count = Count.find_by(_id: "counterZero") 
+    end
   end
 
   def increase
     
-    if Count.where(_id: "counterZero").nil?
-      @count = Count.create(_id: "counterZero",value: 0)
+    if Count.find_by(_id: "counterZero").nil?
+      @count = Count.create(_id: "counterZero",value: 1)
     else
       @count = Count.find_by(_id: "counterZero") 
       @count.value = @count.value + 1
