@@ -1,5 +1,5 @@
 #### Contributors :
-   Telessia : Xavier Fostier
+   Telessia : Xavier Fostier </br>
    Maniaki : Clément Flamcourt
 
 ### External Environnement
