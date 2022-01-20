@@ -20,7 +20,7 @@
   
   >- Clone the repo
   >- open a terminal in "rails_counter_docker-master" folder
-  >- Run "docker-compose build"
+  >- Run "docker-compose build" (it should take a while)
   >- Run "docker-compose run web npm install" to add missing node_modules 
   >- Run "docker-compose up"
   >- Open Browser at http://0.0.0.0:3000/
