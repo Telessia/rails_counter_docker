@@ -1,3 +1,7 @@
+#### Contributors :
+   Telessia : Xavier Fostier
+   Maniaki : Clément Flamcourt
+
 ### External Environnement
 * Ruby
    - 2.7
