@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### External Environnement
+* Ruby
+   - 2.7
+* Docker
+* docker-compose  
 
-Things you may want to cover:
+### Docker environnement
+ 
+* Container 1:
+    - MongoDB
+* Container 2:
+    - Mongo Express (MongoDB data viewer)
+* Container 3:
+    - Ruby 2.7
+    - Rails '6.1.4.4'
+    - Nodejs npm Yarn (dependencies of Rails in this version)
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Configuration
+  
+  >- Clone the repo
+  >- open a terminal in "rails_counter_docker-master" folder
+  >- Run "docker-compose build"
+  >- Run "docker-compose run web npm install" to add missing node_modules 
+  >- Run "docker-compose up"
+  >- Open Browser at http://0.0.0.0:3000/
