@@ -1,5 +1,3 @@
-# README
-
 ### External Environnement
 * Ruby
    - 2.7
@@ -15,7 +13,7 @@
 * Container 3:
     - Ruby 2.7
     - Rails '6.1.4.4'
-    - Nodejs npm Yarn (dependencies of Rails in this version)
+    - Nodejs npm Yarn (necessary to use rails in version < 7 without tweaks)
 
 
 ### Configuration
