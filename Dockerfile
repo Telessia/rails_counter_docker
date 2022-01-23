@@ -7,6 +7,13 @@ COPY Gemfile /railscounter2/Gemfile
 COPY Gemfile.lock /railscounter2/Gemfile.lock
 RUN bundle install
 
+#Install node dependecies
+COPY package.json yarn.lock ./
+RUN yarn install --check-files
+
+#Copy the app
+COPY . ./
+
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
